@@ -1,0 +1,40 @@
+{
+  "libros": [
+    {
+      "id_material": 1,
+      "titulo": "El Aleph",
+      "autor": "Jorge Luis Borges",
+      "fecha_publicacion": "1949",
+      "disponible": true,
+      "categoria": "Ficción",
+      "editorial": "Emecé"
+    },
+    {
+      "id_material": 2,
+      "titulo": "Ficciones",
+      "autor": "Jorge Luis Borges",
+      "fecha_publicacion": "1944",
+      "disponible": true,
+      "categoria": "Ficción",
+      "editorial": "Sur"
+    }
+  ],
+  "mangas": [
+    {
+      "id_material": 11,
+      "titulo": "Dragon Ball",
+      "autor": "Akira Toriyama",
+      "fecha_publicacion": "1984",
+      "disponible": true,
+      "tomo": 1
+    },
+    {
+      "id_material": 12,
+      "titulo": "Naruto",
+      "autor": "Masashi Kishimoto",
+      "fecha_publicacion": "1999",
+      "disponible": true,
+      "tomo": 1
+    }
+  ]
+}

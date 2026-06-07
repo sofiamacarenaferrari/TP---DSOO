@@ -1,4 +1,3 @@
-#BIBLIOTECA 
 
 class Biblioteca:
     def __init__(self, nombre, direccion, telefono, mail):
@@ -6,13 +5,16 @@ class Biblioteca:
         self.direccion = direccion 
         self.telefono = telefono 
         self.mail = mail
-        
-    def registrar_material():
-        
-    def consultar_disponible():
+        self.materiales = []
+        self.socios = []
+        self.prestamos = []
+     
 
-    def buscar_por_titulo():
-        
-    def buscar_por_autor():
-        
-    
+#registrar_material()
+#registrar_socio()
+#buscar_material()
+#listar_materiales_disponibles()
+#registrar_prestamo()
+#registrar_devolucion()
+#listar_prestamos_activos()
+#detectar_prestamos_vencidos()

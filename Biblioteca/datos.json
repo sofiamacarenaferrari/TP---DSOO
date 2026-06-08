@@ -5,7 +5,7 @@
       "titulo": "El Aleph",
       "autor": "Jorge Luis Borges",
       "fecha_publicacion": "1949",
-      "disponible": true,
+      "disponible": "Disponible",
       "categoria": "Ficción",
       "editorial": "Emecé"
     },
@@ -14,7 +14,7 @@
       "titulo": "Ficciones",
       "autor": "Jorge Luis Borges",
       "fecha_publicacion": "1944",
-      "disponible": true,
+      "disponible": "Disponible",
       "categoria": "Ficción",
       "editorial": "Sur"
     }
@@ -25,7 +25,7 @@
       "titulo": "Dragon Ball",
       "autor": "Akira Toriyama",
       "fecha_publicacion": "1984",
-      "disponible": true,
+      "disponible": "Disponible",
       "tomo": 1
     },
     {
@@ -33,7 +33,7 @@
       "titulo": "Naruto",
       "autor": "Masashi Kishimoto",
       "fecha_publicacion": "1999",
-      "disponible": true,
+      "disponible": "Disponible",
       "tomo": 1
     }
   ]

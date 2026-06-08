@@ -1,5 +1,4 @@
 
-#Clase padre 
 class Material: 
     def __init__(self, id_material, titulo, autor, fecha_publicacion, disponible):
         self.id_material = id_material
@@ -8,14 +7,14 @@ class Material:
         self.fecha_publicacion = fecha_publicacion
         self.disponible = disponible
 
-#Clase hija de Material para gestionar libros
+
 class Libro(Material):
     def __init__(self, id_material, titulo, autor, fecha_publicacion, disponible, categoria, editorial):
         super().__init__(id_material, titulo, autor, fecha_publicacion, disponible) 
         self.categoria = categoria 
         self.editorial = editorial 
 
-#Clase hija de Material para gestionar mangas
+
 class Manga(Material):
     def __init__(self, id_material, titulo, autor, fecha_publicacion, disponible, tomo):
         super().__init__(id_material, titulo, autor, fecha_publicacion, disponible) 

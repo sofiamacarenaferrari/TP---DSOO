@@ -2,7 +2,7 @@ import json
 from BIBLIOTECA import Biblioteca
 from MATERIAL import Material, Libro, Manga 
 
-# ______________________________________________________________________________________________________________________________________________________________________________
+# __________________________________________________________
 
 def cargar_base_de_datos(mi_biblioteca):
     print("Cargando materiales...")
@@ -19,7 +19,7 @@ def cargar_base_de_datos(mi_biblioteca):
 
     print(f"Materiales cargados con éxito. Total: {len(mi_biblioteca.materiales)}")
 
-# ______________________________________________________________________________________________________________________________________________________________________________
+# __________________________________________________________
 
 def mostrar_menu(mi_biblioteca):
         continuar = True
@@ -44,23 +44,40 @@ def mostrar_menu(mi_biblioteca):
                 print("\n[Lista de los libros y mangas]")
                 hay_disponible = False
                 for material in mi_biblioteca.materiales: 
-                    if material.disponible == True:
+                    if material.disponible == "Disponible":
                         print(f"ID: {material.id_material} | Título: {material.titulo} | Autor: {material.autor}")
                         hay_disponible = True 
 
                 if not hay_disponible: 
                     print("No hay materiales disponibles en este momento.")
-                continuar = False
+                break
 
-            elif opcion == "10":
+            if opcion == "3":
+                print("\n[Buscar Material por Título o Autor]")
+                busqueda = input("Ingrese el título o el autor que desea buscar: ").lower()
+                encontrado = False
+                print("\nResultados de la búsqueda:")
+                       
+            for material in mi_biblioteca.materiales:
+                if busqueda == material.titulo.lower() or busqueda == material.autor.lower():
+                  if isinstance(material, Manga):
+                    print(f"-> [MANGA] ID: {material.id_material} | Título: {material.titulo} | Autor: {material.autor} | Tomo: {material.tomo} | Estado: {material.disponible}")
+                  elif isinstance(material, Libro):
+                    print(f"-> [LIBRO] ID: {material.id_material} | Título: {material.titulo} | Autor: {material.autor} | Estado: {material.disponible}")
+                encontrado = True
+                         
+            else:
+                print("No se encontraron materiales que coincidan con ese título o autor.")
+            break
+
+            if opcion == "10":
                 print("Saliendo del sistema...")
-                continuar = False
+                break
+            
             else:
                 print("Opción incorrecta. Elige una opcion")
 
 
 mi_biblioteca_fireandblood = Biblioteca("Biblioteca Fire and Blood", "Malabia 246", "4321-5678", "biblioteca_fire_and_blood@gmail.com")
-print(mi_biblioteca_fireandblood.nombre)
-
 cargar_base_de_datos(mi_biblioteca_fireandblood)
 mostrar_menu(mi_biblioteca_fireandblood)

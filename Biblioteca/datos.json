@@ -17,11 +17,83 @@
       "disponible": "Disponible",
       "categoria": "Ficción",
       "editorial": "Sur"
+    },
+    {
+      "id_material": 3,
+      "titulo": "Harry Potter y la Piedra Filosofal",
+      "autor": "J.K. Rowling",
+      "fecha_publicacion": "1997",
+      "disponible": "Disponible",
+      "categoria": "Fantasía",
+      "editorial": "Bloomsbury"
+    },
+    {
+      "id_material": 4,
+      "titulo": "Juego de Tronos",
+      "autor": "George R.R. Martin",
+      "fecha_publicacion": "1996",
+      "disponible": "Disponible",
+      "categoria": "Fantasía",
+      "editorial": "Bantam Books"
+    },
+    {
+      "id_material": 5,
+      "titulo": "Choque de Reyes",
+      "autor": "George R.R. Martin",
+      "fecha_publicacion": "1998",
+      "disponible": "Disponible",
+      "categoria": "Fantasía",
+      "editorial": "Bantam Books"
+    },
+    {
+      "id_material": 6,
+      "titulo": "Divergente",
+      "autor": "Veronica Roth",
+      "fecha_publicacion": "2011",
+      "disponible": "Disponible",
+      "categoria": "Ciencia Ficción",
+      "editorial": "Katherine Tegen Books"
+    },
+    {
+      "id_material": 7,
+      "titulo": "Los Juegos del Hambre",
+      "autor": "Suzanne Collins",
+      "fecha_publicacion": "2008",
+      "disponible": "Disponible",
+      "categoria": "Ciencia Ficción",
+      "editorial": "Scholastic"
+    },
+    {
+      "id_material": 8,
+      "titulo": "El Señor de los Anillos",
+      "autor": "J.R.R. Tolkien",
+      "fecha_publicacion": "1954",
+      "disponible": "Disponible",
+      "categoria": "Fantasía",
+      "editorial": "Allen & Unwin"
+    },
+    {
+      "id_material": 9,
+      "titulo": "Crepúsculo",
+      "autor": "Stephenie Meyer",
+      "fecha_publicacion": "2005",
+      "disponible": "Disponible",
+      "categoria": "Romance",
+      "editorial": "Little Brown"
+    },
+    {
+      "id_material": 10,
+      "titulo": "El Código Da Vinci",
+      "autor": "Dan Brown",
+      "fecha_publicacion": "2003",
+      "disponible": "Disponible",
+      "categoria": "Thriller",
+      "editorial": "Doubleday"
     }
   ],
   "mangas": [
     {
-      "id_material": 3,
+      "id_material": 11,
       "titulo": "Dragon Ball",
       "autor": "Akira Toriyama",
       "fecha_publicacion": "1984",
@@ -29,22 +101,118 @@
       "tomo": 1
     },
     {
-      "id_material": 4,
+      "id_material": 12,
       "titulo": "Naruto",
       "autor": "Masashi Kishimoto",
       "fecha_publicacion": "1999",
       "disponible": "Disponible",
       "tomo": 1
+    },
+    {
+      "id_material": 13,
+      "titulo": "One Piece",
+      "autor": "Eiichiro Oda",
+      "fecha_publicacion": "1997",
+      "disponible": "Disponible",
+      "tomo": 1
+    },
+    {
+      "id_material": 14,
+      "titulo": "Attack on Titan",
+      "autor": "Hajime Isayama",
+      "fecha_publicacion": "2009",
+      "disponible": "Disponible",
+      "tomo": 1
+    },
+    {
+      "id_material": 15,
+      "titulo": "Demon Slayer",
+      "autor": "Koyoharu Gotouge",
+      "fecha_publicacion": "2016",
+      "disponible": "Disponible",
+      "tomo": 1
+    },
+    {
+      "id_material": 16,
+      "titulo": "Death Note",
+      "autor": "Tsugumi Ohba",
+      "fecha_publicacion": "2003",
+      "disponible": "Disponible",
+      "tomo": 1
+    },
+    {
+      "id_material": 17,
+      "titulo": "Fullmetal Alchemist",
+      "autor": "Hiromu Arakawa",
+      "fecha_publicacion": "2001",
+      "disponible": "Disponible",
+      "tomo": 1
+    },
+    {
+      "id_material": 18,
+      "titulo": "Bleach",
+      "autor": "Tite Kubo",
+      "fecha_publicacion": "2001",
+      "disponible": "Disponible",
+      "tomo": 1
+    },
+    {
+      "id_material": 19,
+      "titulo": "My Hero Academia",
+      "autor": "Kohei Horikoshi",
+      "fecha_publicacion": "2014",
+      "disponible": "Disponible",
+      "tomo": 1
+    },
+    {
+      "id_material": 20,
+      "titulo": "Hunter x Hunter",
+      "autor": "Yoshihiro Togashi",
+      "fecha_publicacion": "1998",
+      "disponible": "Disponible",
+      "tomo": 1
     }
   ],
-  "socios": [
-    {
-      "id_socio": 1,
-      "nombre": "Sofia",
-      "apellido": "Ferrari",
-      "dni": "12345678",
-      "mail": "sofia.ferrari@gmail.com",
-      "habilitado": true
-    }
-  ]
+"socios": [
+  {
+    "id_socio": 1,
+    "nombre": "Sofia",
+    "apellido": "Ferrari",
+    "dni": "12345678",
+    "mail": "sofia.ferrari@gmail.com",
+    "habilitado": true
+  },
+  {
+    "id_socio": 2,
+    "nombre": "Lucas",
+    "apellido": "Martinez",
+    "dni": "23456789",
+    "mail": "lucas.martinez@gmail.com",
+    "habilitado": true
+  },
+  {
+    "id_socio": 3,
+    "nombre": "Valentina",
+    "apellido": "Gomez",
+    "dni": "34567890",
+    "mail": "valentina.gomez@gmail.com",
+    "habilitado": true
+  },
+  {
+    "id_socio": 4,
+    "nombre": "Agustin",
+    "apellido": "Fernandez",
+    "dni": "45678901",
+    "mail": "agustin.fernandez@gmail.com",
+    "habilitado": false
+  },
+  {
+    "id_socio": 5,
+    "nombre": "Camila",
+    "apellido": "Rodriguez",
+    "dni": "56789012",
+    "mail": "camila.rodriguez@gmail.com",
+    "habilitado": true
+  }
+]
 }

@@ -58,7 +58,8 @@ def mostrar_menu(mi_biblioteca):
 
                 if not hay_disponible: 
                     print("No hay materiales disponibles en este momento.")
-                break
+                    
+                input("\nPresione Enter para volver al menú...")
 
             elif opcion == "2":
                 mi_biblioteca.registrar_material()
@@ -79,7 +80,7 @@ def mostrar_menu(mi_biblioteca):
 
                 if not encontrado:
                     print("No se encontraron materiales que coincidan con ese título o autor.")
-                break
+                input("\nPresione Enter para volver al menú...")
 
             elif opcion == "4":
                 registrar_socio(mi_biblioteca.socios)
@@ -105,7 +106,7 @@ def mostrar_menu(mi_biblioteca):
 
                 if not encontrado:
                     print("\nNo se encontró ningún socio con ese DNI.")
-                break
+                input("\nPresione Enter para volver al menú...")
 
             elif opcion == "6":
                 print("\n[Listado de usuarios habilitados]\n")
@@ -118,7 +119,8 @@ def mostrar_menu(mi_biblioteca):
 
                 if not hay_socios:
                     print("No hay usuarios habilitados en este momento.")
-                break
+                input("\nPresione Enter para volver al menú...")
+                
             
             elif opcion == "7":
                 registrar_prestamo(mi_biblioteca.prestamos, mi_biblioteca.socios, mi_biblioteca.materiales)
@@ -134,10 +136,11 @@ def mostrar_menu(mi_biblioteca):
 
             elif opcion == "11":
                 print("Saliendo del sistema...")
-                break
+                continuar = False
             
             else:
                 print("Opción incorrecta. Elige una opcion")
+                input("\nPresione Enter para volver al menú...")
 
 
 mi_biblioteca_fireandblood = Biblioteca("Biblioteca Fire and Blood", "Malabia 246", "4321-5678", "biblioteca_fire_and_blood@gmail.com")

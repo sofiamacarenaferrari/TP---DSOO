@@ -68,21 +68,26 @@ def registrar_devolucion(prestamos, socios):
     if not socio_encontrado:
         print("No se encontró ningún socio con ese DNI.")
         return
-    
-    prestamo_encontrado = None
 
+    prestamos_activos = []
     for prestamo in prestamos:
         if prestamo.socio.dni == dni_buscado and prestamo.activo == True:
-            prestamo_encontrado = prestamo
-            break
+            prestamos_activos.append(prestamo)
 
-    if not prestamo_encontrado:
+    if len(prestamos_activos) == 0:
         print("El socio no tiene préstamos activos.")
         return
-    
-    prestamo_encontrado.activo = False
+
+    print("\nPréstamos activos del socio:\n")
+    for i, prestamo in enumerate(prestamos_activos):
+        print(f"{i + 1}. {prestamo.material.titulo} - Vence: {prestamo.fecha_devolucion}")
+
+    eleccion = input("\n¿Cuál desea devolver? (ingrese el número): ")
+    indice = int(eleccion) - 1
+
+    prestamos_activos[indice].activo = False
     print(f"\nDevolución registrada con éxito.")
-    print(f"Material devuelto: {prestamo_encontrado.material.titulo}")
+    print(f"Material devuelto: {prestamos_activos[indice].material.titulo}")
     input("\nPresione Enter para volver al menú...")
 
 # ______________________________________________________________________________________________________________________________________
@@ -104,7 +109,7 @@ def listar_prestamos_activos(prestamos):
 
     if not hay_prestamos:
         print("No hay préstamos activos.")
-        input("\nPresione Enter para volver al menú...")
+    input("\nPresione Enter para volver al menú...")
 
 # ______________________________________________________________________________________________________________________________________
 

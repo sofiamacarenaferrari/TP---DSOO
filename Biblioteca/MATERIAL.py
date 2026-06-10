@@ -1,4 +1,3 @@
-
 class Material: 
     def __init__(self, id_material, titulo, autor, fecha_publicacion, disponible):
         self.id_material = id_material
@@ -18,4 +17,4 @@ class Libro(Material):
 class Manga(Material):
     def __init__(self, id_material, titulo, autor, fecha_publicacion, disponible, tomo):
         super().__init__(id_material, titulo, autor, fecha_publicacion, disponible) 
-        self.tomo = tomo 
+        self.tomo = tomo

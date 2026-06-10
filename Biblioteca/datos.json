@@ -21,7 +21,7 @@
   ],
   "mangas": [
     {
-      "id_material": 11,
+      "id_material": 3,
       "titulo": "Dragon Ball",
       "autor": "Akira Toriyama",
       "fecha_publicacion": "1984",
@@ -29,12 +29,22 @@
       "tomo": 1
     },
     {
-      "id_material": 12,
+      "id_material": 4,
       "titulo": "Naruto",
       "autor": "Masashi Kishimoto",
       "fecha_publicacion": "1999",
       "disponible": "Disponible",
       "tomo": 1
+    }
+  ],
+  "socios": [
+    {
+      "id_socio": 1,
+      "nombre": "Sofia",
+      "apellido": "Ferrari",
+      "dni": "12345678",
+      "mail": "sofia.ferrari@gmail.com",
+      "habilitado": true
     }
   ]
 }

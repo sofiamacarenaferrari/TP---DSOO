@@ -90,10 +90,8 @@ def mostrar_menu(mi_biblioteca):
 
                 dni_buscado = input("Ingrese el DNI del socio: ").strip()
                 encontrado = False
-                print("Socios cargados:", len(mi_biblioteca.socios))
 
                 for socio in mi_biblioteca.socios:
-                    print("DNI guardado:", socio.dni)
                     if socio.dni == dni_buscado:
                         print("\nSocio encontrado:")
                         print(f"ID: {socio.id_socio}")
@@ -120,7 +118,6 @@ def mostrar_menu(mi_biblioteca):
                 if not hay_socios:
                     print("No hay usuarios habilitados en este momento.")
                 input("\nPresione Enter para volver al menú...")
-                
             
             elif opcion == "7":
                 registrar_prestamo(mi_biblioteca.prestamos, mi_biblioteca.socios, mi_biblioteca.materiales)
